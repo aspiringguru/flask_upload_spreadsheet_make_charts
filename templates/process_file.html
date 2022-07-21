@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Process file</title>
+  </head>
+  <body>
+    <p>Process File</p>
+    Datasets from filename : {{ file_name }}<br>
+    {% if dataset1 is defined %}
+      {% if dataset1 is none %}
+          dataset1 not found.<br>
+      {% else %}
+          <p>DataSet 1</p>
+          <img src="/static/process_output/{{ output_file_name_prefix }}_dataset_1_PHMB_0.1_errorbars.png" alt="PHMB 0.1%_errorbars" width="640" height="480"><br>
+          <img src="/static/process_output/{{ output_file_name_prefix }}_dataset_1_PHMB_0.2_errorbars.png" alt="PHMB 0.2%_errorbars" width="640" height="480"><br>
+          <img src="/static/process_output/{{ output_file_name_prefix }}_dataset_1_NAC_errorbars.png" alt="_OD_NAC_errorbars" width="640" height="480"><br>
+          <img src="/static/process_output/{{ output_file_name_prefix }}_dataset_1_TRIS_errorbars.png" alt="_OD_TRIS_errorbars" width="640" height="480"><br>
+          <img src="/static/process_output/{{ output_file_name_prefix }}_dataset_1_all_medium_w_errorbars.png" alt="_all_medium_w_errorbars" width="640" height="480"><br>
+          <a href="/static/process_output/{{ output_file_name_prefix }}_dataset_1_PHMB_0.1_output.xlsx">{{ output_file_name_prefix }}_dataset_2_PHMB 0.1_output.xlsx</a><br>
+          <a href="/static/process_output/{{ output_file_name_prefix }}_dataset_1_PHMB_0.2_output.xlsx">{{ output_file_name_prefix }}_dataset_2_PHMB 0.2_output.xlsx</a><br>
+          <a href="/static/process_output/{{ output_file_name_prefix }}_dataset_1_NAC_output.xlsx">{{ output_file_name_prefix }}_dataset_2_NAC_output.xlsx</a><br>
+          <a href="/static/process_output/{{ output_file_name_prefix }}_dataset_1_TRIS_output.xlsx">{{ output_file_name_prefix }}_dataset_2_TRIS_output.xlsx</a><br>
+          <a href="/static/process_output/{{ output_file_name_prefix }}_dataset_1_all_medium_w_errorbars.xlsx">{{ output_file_name_prefix }}_dataset_2_all_medium_w_errorbars.xlsx</a><br>
+      {%endif %}
+    {% endif %}
+    {% if dataset2 is defined %}
+      {% if dataset2 is none %}
+          dataset2 not found.<br>
+      {% else %}
+          <p>DataSet 2</p>
+          <img src="/static/process_output/{{ output_file_name_prefix }}_dataset_2_PHMB_0.1_errorbars.png" alt="PHMB 0.1%_errorbars" width="640" height="480"><br>
+          <img src="/static/process_output/{{ output_file_name_prefix }}_dataset_2_PHMB_0.2_errorbars.png" alt="PHMB 0.2%_errorbars" width="640" height="480"><br>
+          <img src="/static/process_output/{{ output_file_name_prefix }}_dataset_2_NAC_errorbars.png" alt="_OD_NAC_errorbars" width="640" height="480"><br>
+          <img src="/static/process_output/{{ output_file_name_prefix }}_dataset_2_TRIS_errorbars.png" alt="_OD_TRIS_errorbars" width="640" height="480"><br>
+          <img src="/static/process_output/{{ output_file_name_prefix }}_dataset_2_all_medium_w_errorbars.png" alt="_all_medium_w_errorbars" width="640" height="480"><br>
+          <a href="/static/process_output/{{ output_file_name_prefix }}_dataset_2_PHMB_0.1_output.xlsx">{{ output_file_name_prefix }}_dataset_2_PHMB 0.1_output.xlsx</a><br>
+          <a href="/static/process_output/{{ output_file_name_prefix }}_dataset_2_PHMB_0.2_output.xlsx">{{ output_file_name_prefix }}_dataset_2_PHMB 0.2_output.xlsx</a><br>
+          <a href="/static/process_output/{{ output_file_name_prefix }}_dataset_2_NAC_output.xlsx">{{ output_file_name_prefix }}_dataset_2_NAC_output.xlsx</a><br>
+          <a href="/static/process_output/{{ output_file_name_prefix }}_dataset_2_TRIS_output.xlsx">{{ output_file_name_prefix }}_dataset_2_TRIS_output.xlsx</a><br>
+          <a href="/static/process_output/{{ output_file_name_prefix }}_dataset_2_all_medium_w_errorbars.xlsx">{{ output_file_name_prefix }}_dataset_2_all_medium_w_errorbars.xlsx</a><br>
+      {%endif %}
+    {% endif %}
+    <p> Chrome users may experience difficulty downloading excel files due to Chrome default security settings.<br>
+        Chrome users :  >
+        <a href="https://www.alphr.com/add-trusted-sites-google-chrome/" target="_blank">Configure this domain as a trusted site</a>
+    </p>
+
+    <script>
+
+    </script>
+  </body>
+</html>
